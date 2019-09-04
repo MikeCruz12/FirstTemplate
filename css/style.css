@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+body {
+	margin: 0;
+	background-color: #dcdcdc;
+}
+
+/*--------------Flexbox--------------*/
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="flex-col-"]{
+	padding: 10px;
+}
+
+.flex-row > .flex-col-lg-1 { flex: 0 0 8.33%; }
+.flex-row > .flex-col-lg-2 { flex: 0 0 16.66%; }
+.flex-row > .flex-col-lg-3 { flex: 0 0 25%; }
+.flex-row > .flex-col-lg-4 { flex: 0 0 33.33%; }
+.flex-row > .flex-col-lg-5 { flex: 0 0 41.66%; }
+.flex-row > .flex-col-lg-6 { flex: 0 0 50%; }
+.flex-row > .flex-col-lg-7 { flex: 0 0 58.33%; }
+.flex-row > .flex-col-lg-8 { flex: 0 0 66.66%; }
+.flex-row > .flex-col-lg-9 { flex: 0 0 75%; }
+.flex-row > .flex-col-lg-10 { flex: 0 0 83.33%; }
+.flex-row > .flex-col-lg-11 { flex: 0 0 91.66%; }
+.flex-row > .flex-col-lg-12 { flex: 0 0 100%; }
+
+/*--------------Navigatation Bar--------------*/
+div.menu-icon {
+    width: 28px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+
+#nav-menu {
+	margin: 0;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	background-color: #19191b;
+}
+
+#nav-menu img.logo {
+	width: 59px;
+	height: auto;
+	padding: 5px;
+}
+
+#nav-links ul.nav-list {
+	position: absolute;
+	width: 100%
+	height: auto;
+	top: 0;
+	right: 10px;
+}
+
+li.nav-item {
+	display: inline-block;
+	padding: .5em 1.2em .5em 0px;
+}
+
+a.nav-link {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+a.nav-link:hover {
+	color: #888888;
+	transition: .2s;
+}
+
+button.btn-nav {
+	visibility: hidden;
+}
+
+/*--------------Full-Width Header--------------*/
+section.header-section {
+	background-image: url("../images/bg_header.jpg");
+	background-color: rgba(200, 0, 0, .30);
+	width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+div.header-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 24px 0px;
+}
+
+.my-photo {
+	width: 142px;
+	height: auto;
+	border-radius: 50%;
+	border: 4px solid #00dcc5;
+	padding-top: 10px;
+	box-shadow: 4px 4px #000000;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+h1.header-title, p.header-description, a.btn-header {
+	position: relative;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	text-align: center;
+
+}
+
+h1.header-title {
+	font-size: 32px;
+	margin-bottom: 4px;
+}
+
+p.header-description {
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 4px;
+}
+
+a.btn-header {
+	font-size: 16px;
+	text-decoration: none;
+	display: inline-block;
+	border: 2px solid #ffffff;
+	padding: 4px 6px;
+	margin: 5px;
+}
+
+a.btn-header:hover {
+	border: 2px solid #888888;
+	color: #888888;
+	transition: .2s;
+}
+
+/*--------------About Me--------------*/
+#about-section {
+	background-color: #ffffff;
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+h1.about-header, h1.work-header {
+    color: white;
+    background-color: #00948c;
+    padding: 5px;
+    font-size: 28px;
+    margin: 0px;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 2px 4px black;
+}
+
+p.about-description, p.job-responsibilities {
+    text-indent: 50px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+ul.personal-info-list {
+	margin-left: -16px;
+}
+
+ul.personal-info-list li.personal-info-item {
+	list-style-type: none;
+	letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+img.skill-photo {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+h2.education-header {
+	font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+p.education-description {
+	    margin: 6px 0px;
+}
+
+span.education-date {
+	font-style: italic;
+}
+
+/*--------------Experience--------------*/
+#experience-section {
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#job-description, #website-links {
+	display: inline-block;
+}
+
+#job-description {
+	width: 60%;
+	height: auto;
+	margin-right: 1%;
+	background-color: #ffffff;
+}
+
+#website-links {
+	float: right;
+	width: 39%;
+	background-color: #ffffff;
+	padding-bottom: 30px;
+}
+
+h3.website-title, h2.job-title, span.work-date {
+	margin-bottom: 2px;
+}
+
+img.website-image {
+	width: 100%;
+	height: auto;
+}
+
+img.website-image:hover {
+	opacity: 0.40;
+}
+
+p.job-responsibilities {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+ul.jd-list li.jd-item {
+	list-style-type: square;
+	letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/*--------------Contact--------------*/
+#contact-section {
+	background-color: #292929;
+}
+
+h1.contact-header {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+h2.contact-details {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+p.contact-info {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 6px 0px;
+}
+
+div.contact-form > input, label, textarea{
+	display: block;
+	margin-bottom: 12px;
+    width: 100%;
+}
+
+input.contact-input[type="text"], input.contact-input[type="email"] {
+  	height: auto;
+    font-size: 16px;
+    padding: 4px;
+    border: 4px solid #005850;
+    border-radius: 6px;
+}
+
+textarea.contact-input {
+	height: 100px;
+	resize: none;
+	font-size: 16px;
+    padding: 4px;
+    border: 4px solid #005850;
+    border-radius: 6px;
+}
+
+input.btn-contact[type="submit"] {
+	color: #ffffff;
+    background-color: rgba(0,0,0,0);
+    width: 100px;
+    padding: 8px;
+    float: right;
+    font-size: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+}
+
+input.btn-contact[type="submit"]:hover {
+	color: #888888;
+    border: 3px solid #888888;
+    transition: .2s;
+}
+
+/*--------------Footer--------------*/
+#footer {
+	background-color: #19191b;
+}
+
+p.footer {
+	color: #ffffff;
+	text-align: center;
+}
+
+/*tablet screen*/
+@media screen and (max-width: 768px) {
+	.flex-row > .flex-col-md-1 { flex: 0 0 8.33%; }
+	.flex-row > .flex-col-md-2 { flex: 0 0 16.66%; }
+	.flex-row > .flex-col-md-3 { flex: 0 0 25%; }
+	.flex-row > .flex-col-md-4 { flex: 0 0 33.33%; }
+	.flex-row > .flex-col-md-5 { flex: 0 0 41.66%; }
+	.flex-row > .flex-col-md-6 { flex: 0 0 50%; }
+	.flex-row > .flex-col-md-7 { flex: 0 0 58.33%; }
+	.flex-row > .flex-col-md-8 { flex: 0 0 66.66%; }
+	.flex-row > .flex-col-md-9 { flex: 0 0 75%; }
+	.flex-row > .flex-col-md-10 { flex: 0 0 83.33%; }
+	.flex-row > .flex-col-md-11 { flex: 0 0 91.66%; }
+	.flex-row > .flex-col-md-12 { flex: 0 0 100%; }
+
+	#job-description {
+		width: 100%;
+		margin-right: 0;
+		background-color: #ffffff;
+	}
+
+	#website-links {
+		float: none;
+		width: 100%;
+		background-color: #ffffff;
+		margin-top: 2%;
+	}
+
+}
+
+/*mobile screen*/
+@media screen and (max-width: 425px){
+	.flex-row > .flex-col-sm-1 { flex: 0 0 8.33%; }
+	.flex-row > .flex-col-sm-2 { flex: 0 0 16.66%; }
+	.flex-row > .flex-col-sm-3 { flex: 0 0 25%; }
+	.flex-row > .flex-col-sm-4 { flex: 0 0 33.33%; }
+	.flex-row > .flex-col-sm-5 { flex: 0 0 41.66%; }
+	.flex-row > .flex-col-sm-6 { flex: 0 0 50%; }
+	.flex-row > .flex-col-sm-7 { flex: 0 0 58.33%; }
+	.flex-row > .flex-col-sm-8 { flex: 0 0 66.66%; }
+	.flex-row > .flex-col-sm-9 { flex: 0 0 75%; }
+	.flex-row > .flex-col-sm-10 { flex: 0 0 83.33%; }
+	.flex-row > .flex-col-sm-11 { flex: 0 0 91.66%; }
+	.flex-row > .flex-col-sm-12 { flex: 0 0 100%; }
+
+	#nav-links {
+		display: none;
+	}
+
+	#nav-links ul.nav-list {
+		position: relative;
+		width: 100%
+		height: auto;
+		left: -34px;
+		padding-bottom: 20px;
+		margin-bottom: 0px;
+	}
+
+	li.nav-item {
+		display: block;
+		padding: .5em 1.2em .5em 0px;
+		width: 100%;
+		background-color: #19191b;
+		border-bottom: 1px solid #ffffff;
+	}
+
+	button.btn-nav {
+	    visibility: visible;
+	    border: 2px solid #ffffff;
+	    border-radius: 4px;
+	    font-family: lato;
+	    font-size: 24px;
+	    font-weight: bold;
+	    color: #ffffff;
+	    background-color: rgba(0, 0, 0, 0);
+	    margin: 0;
+	    padding: 4px 8px;
+	    position: absolute;
+	    top: 15px;
+	    right: 12px;
+	}
+
+	#job-description {
+		width: 100%;
+		margin-right: 0;
+		background-color: #ffffff;
+	}
+
+	#website-links {
+		float: none;
+		width: 100%;
+		background-color: #ffffff;
+		margin-top: 2%;
+	}
+}

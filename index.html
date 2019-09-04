@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My First Layout</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Navigation Bar-->
+	<nav id="nav-menu">
+		<a href="#home-header"><img class="logo" src="images/logo.png" alt="logo"></a>
+		<button class="btn-nav" onclick="navToggle()">
+			<div class="menu-icon"></div>
+			<div class="menu-icon"></div>
+			<div class="menu-icon"></div>
+		</button>
+		<div id="nav-links">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a class="nav-link" href="#home-header">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about-section">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience-section">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact-section">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Home Full-Width Headerr-->
+	<header id="home-header">
+		<section class="header-section">
+			<div class="header-content">
+				<img class="my-photo" src="images/mike.jpg" alt="my photo">
+				<h1 class="header-title">Mike Edric Cruz</h1>
+				<hr class="hr-header">
+				<p class="header-description">First Created Layout Using HTML and CSS</p>
+				<center>
+				<a class="btn-header" href="https://www.w3schools.com/html/default.asp" target="_blank">HTML Tutorial</a>
+				<a class="btn-header" href="https://www.w3schools.com/css/default.asp" target="_blank">CSS Tutorial</a>
+				</center>
+			</div>
+		</section>
+	</header>
+
+	<!--About-->
+	<section id="about-section">
+		<div class="flex-row">
+			<!--About Me Description-->
+			<div class="flex-col-lg-8 flex-col-md-12 flex-col-sm-12">
+				<h1 class="about-header">About Me</h1>
+				<p class="about-description">
+					"I’m currently looking for a career opportunity
+					to enhance my Web Development Skills. I don't have
+					much experience and only know the basic in
+					Back-end and Front-end programming, but willing to undergo training
+					and do self study to learn more."
+				<p>
+			</div>
+
+			<!--Personal Info-->
+			<div class="flex-col-lg-4 flex-col-md-12 flex-col-sm-12">
+				<h1 class="about-header">Personal Info:</h1>
+				<ul class="personal-info-list">
+					<li class="personal-info-item"><b>Gender:</b> Male</li>
+					<li class="personal-info-item"><b>Birthday:</b> October 12, 1996</li>
+					<li class="personal-info-item"><b>Marital Status:</b> Single</li>
+					<li class="personal-info-item"><b>Nationality:</b> Filipino</li>
+				</ul>
+			</div>
+
+			<!--Education-->
+			<div class="flex-col-lg-8 flex-col-md-12 flex-col-sm-12">
+				<h1 class="about-header">Education</h1>
+
+				<div class="flex-row">
+					<div class="flex-col-lg-12 flex-col-md-12 flex-col-sm-12">
+						<h2 class="education-header">Tertiary</h2>
+						<p class="education-description">
+							Bachelor of Science in Information Technology
+							Jose Rizal University, Mandaluyong City
+						</p>
+						<span class="education-date">2013-2018</span>
+					</div>
+
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h2 class="education-header">Secondary</h2>
+						<p class="education-description">
+							Saint Genevieve School of Pateros
+						</p>
+						<span class="education-date">2009-2013</span>
+					</div>
+
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h2 class="education-header">Primary</h2>
+						<p class="education-description">
+							Pateros Elementary School
+						</p>
+						<span class="education-date">2003-2009</span>
+					</div>
+				</div>
+			</div>
+
+			<!--Skills-->
+			<div class="flex-col-lg-4 flex-col-md-12 flex-col-sm-12">
+				<h1 class="about-header">Web Development Skills</h1>
+				<div class="flex-row">
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/html.png" alt="html logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/css.png" alt="css logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/javascript.png" alt="javascript logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/bootstrap.png" alt="bootstrap logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/php.png" alt="php logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/mysql.png" alt="mysql logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/wordpress.png" alt="wordpress logo">
+					</div>
+					<div class="flex-col-lg-3 flex-col-md-3 flex-col-sm-6">
+						<img class="skill-photo" src="images/photoshop.png" alt="photoshop logo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Experiencet-->
+	<section id="experience-section">
+		<div class="flex-row">
+			<!--Job Description-->
+			<div id="job-description">
+				<div class="flex-row">
+					<div class="flex-col-lg-12 flex-col-md-12 flex-col-sm-12">
+						<h1 class="work-header">Work Experience</h1>
+						<h2 class="job-title">The Sandwich Guy - Web Developer</h2>
+						<span class="work-date">(May 15, 2018 - April 13, 2019)</span>
+						<p class="job-responsibilities">
+							Developed and maintain company’s business
+							websites using wordpress to help the marketing
+							team to their sales. Jobs and Responsibilities:
+						</p>
+
+						<ul class="jd-list">
+							<li class="jd-item">Web Designing</li>
+							<li class="jd-item">Adding Functionality to Website</li>
+							<li class="jd-item">Updating Website Contents</li>
+							<li class="jd-item">Providing and Maintaning Business Emails</li>
+							<li class="jd-item">Creating Forms for Lead Generation </li>
+							<li class="jd-item">Update and Maintain Facebook Chatbot</li>
+							<li class="jd-item">SEO maintenance</li>
+							<li class="jd-item">Hosting Maintenance</li>
+							<li class="jd-item">Troubleshooting</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--Websites-->
+			<div id="website-links">
+				<div class="flex-row">
+					<div class="flex-col-lg-12 flex-col-md-12 flex-col-sm-12">
+						<h1 class="work-header">Websites</h1>
+					</div>
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h3 class="website-title">The Sandwich Guy</h3>
+						<a href="https://thesandwichguy.com/" target="_blank">
+							<img class="website-image" src="images/tsg.jpg" alt="The Sandwich Guy Website">
+						</a>
+					</div>
+
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h3 class="website-title">California Beach Pansol</h3>
+						<a href="https://californiapansol.com/" target="_blank">
+							<img class="website-image" src="images/calibeach.jpg" alt="California Beach Pansol Website">
+						</a>
+					</div>
+
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h3 class="website-title">Pares Retiro</h3>
+						<a href="https://paresretiro.com/" target="_blank">
+							<img class="website-image" src="images/paresretiro.jpg" alt="Pares Retiro Website">
+						</a>
+					</div>
+
+					<div class="flex-col-lg-6 flex-col-md-6 flex-col-sm-12">
+						<h3 class="website-title">Taggo Bar</h3>
+						<a href="https://taggobar.com/" target="_blank">
+							<img class="website-image" src="images/taggobar.jpg" alt="Taggo Bar Website">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--contacts-->
+	<section id="contact-section">
+		<div class="flex-row">
+			<!--contact details-->
+			<div class="flex-col-lg-8 flex-col-md-6 flex-col-sm-12">
+				<h1 class="contact-header">Get In Touch</h1>
+				<hr>
+				<h2 class="contact-details">Message me to know more, here are my contact details or just fill up the form.</h2>
+				<p class="contact-info">Email: mikecruz12@gmail.com</p>
+				<p class="contact-info">Mobile: +639 282 614 591</p>
+				<p class="contact-info">Address: Pateros Metro Manila, Philippines</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15447.781795989831!2d121.06094872055144!3d14.545112207478747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c89ab827dc07%3A0xcc609a1a7ca227d1!2sPateros%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1567524930677!5m2!1sen!2sph" width="300" height="auto" frameborder="0" style="border:0; margin-top: 6px;"></iframe>
+			</div>
+
+			<!--contact form-->
+			<div class="flex-col-lg-4 flex-col-md-6 flex-col-sm-12">
+				<h2 class="contact-details">Contact Form</h2>
+				<div class="contact-form">
+					<input class="contact-input" type="text" name="name" placeholder="Full Name">
+					<input class="contact-input" type="text" name="contact" placeholder="Contact Number">
+					<input class="contact-input" type="email" name="email" placeholder="Email Address">
+					<label style="color: #ffffff;">Message</label>
+					<textarea class="contact-input"></textarea>
+					<input class="btn-contact" type="submit" name="submit" value="Send">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="flex-row">
+			<div class="flex-col-lg-12 flex-col-md-12 flex-col-sm-12">
+				<p class="footer">Mike Edric Cruz ©2019 | All Rights Reserved | Privacy Policy | Terms of Use</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
